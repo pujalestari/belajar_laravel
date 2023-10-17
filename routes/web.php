@@ -14,21 +14,11 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-
-Route::get('/home' ,[HomeController::class 'home']);
-
-
 //Jalur Route ke halaman Welcome 
-Route::get('/welcome', function () {
-    return 'welcome';
-});
+Route::get('/home', [HomeController::class,'home']);
     
 //Jalur Route ke halaman About Us 
-Route::get('/about', function () {
-    return 'About Us';
-});
+Route::get('/about', [HomeController::class,'about']);
 
 //Jalur Route ke halaman Contact Us  
-Route::get('/contact', function () {
-    return 'Contact Us';
-});
+Route::get('/datadiri', [HomeController::class,'datadiri']);
